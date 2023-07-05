@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
     <title>Can Pouliquen</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -14,6 +15,7 @@
                 <li><a href="#about">Quick bio</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#talks">Talks</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -23,13 +25,14 @@
             <h3>Ecole Normale Supérieure de Lyon</h3>
             <p>can.pouliquen \AT\ ens-lyon \DOT\ fr</p>
             <div class="social-icons">
-                <a href="https://github.com/perceptronium/" target="_blank" rel="noopener noreferrer"><img
-                        src="scholar-icon.png" alt="Scholar"></a>
+                <a href="https://scholar.google.com/citations?user=s6qRwUYAAAAJ&hl=fr&oi=sra" target="_blank"
+                    rel="noopener noreferrer"><img src="scholar-icon.png" alt="Scholar"></a>
                 <a href="https://github.com/perceptronium/" target="_blank" rel="noopener noreferrer"><img
                         src="github-icon.png" alt="Github"></a>
                 <a href="https://twitter.com/can_pouliquen" target="_blank" rel="noopener noreferrer"><img
                         src="twitter-icon.png" alt="Twitter"></a>
             </div>
+            <br><small>Last update: June 2023</small>
         </div>
     </header>
     <section id="about">
@@ -40,8 +43,8 @@
                 <img src="me.jpg" alt="hey it's me">
             </div>
             </p>
-            <p>Hello ! I am a 1st year PhD student in Machine Learning at the Ecole Normale Supérieure
-                de Lyon under the supervision of <a href="https://mathurinm.github.io/" target="_blank"
+            <p>Hello ! I am a 1st year PhD student in Machine Learning at the <i>Ecole Normale Supérieure de Lyon</i>
+                under the supervision of <a href="https://mathurinm.github.io/" target="_blank"
                     rel="noopener noreferrer">Mathurin
                     Massias</a>, <a href="https://tvayer.github.io/" target="_blank" rel="noopener noreferrer">Titouan
                     Vayer</a> and <a href="http://perso.ens-lyon.fr/paulo.goncalves/" target="_blank"
@@ -52,9 +55,8 @@
                 CNRS<sup>2</sup>, led
                 by
                 <a href="https://people.irisa.fr/Remi.Gribonval/" target="_blank" rel="noopener noreferrer">Rémi
-                    Gribonval</a>. My current research interests
-                revolve
-                around optimization for machine learning and high-dimensional statistics. I like open science.
+                    Gribonval</a>.
+                <!-- I'm also a teaching assistant at <i>Centrale Lyon</i> and <i>CPE Lyon</i>. -->
             </p>
             <p>Previously, I was a research intern in Deep Learning in the NeuroAI team of CERCO, a CNRS lab in
                 Toulouse<sup>3</sup>,
@@ -67,8 +69,7 @@
             <p>Before that, we may have met in Berlin, Montpellier, Lyon, Istanbul, Beyrouth, Amman or Cairo. Hit me up
                 if that's the case !
             </p>
-            <p>Outside of research, I enjoy hiking, running, boxing, food, beers, and "la belle vie" with my
-                girlfriend.
+            <p>Outside of research, I enjoy hiking, running, food, beers, and "la belle vie" with my girlfriend.
             </p>
             <div class="some-defs">
                 <ol>
@@ -84,28 +85,55 @@
             <h2>Research</h2>
             <p>I am currently working on large-scale optimization for statistical machine learning
                 in the
-                context of sparse graph inference. More specifically, on improvements of the estimation
-                of sparse precision matrices, which model conditional
-                (in)dependance relationships between covariates.
-                <br>I have a particular interest in applications
-                to neuroscience problems.
+                context of sparse graph inference. </p>
+
+            <p>
+                A bit more formally, given an empirical covariance matrix \(S \in \mathbb{R}^{p \times p}\) of a dataset
+                of \(n\) random vectors \( x_i \sim
+                \mathcal{N}^p(\mu, \Sigma) \), I am interested in estimating \( \Theta = \Sigma^{-1}\) (called <i>
+                    precision
+                    matrix</i>) with a sparsity prior.
+                This is important because \( \Theta \) can be seen as the adjacency matrix of a graph modelling the
+                correlation between considered entities over time.
             </p>
-            <p>Broadly speaking, I am interested in optimization theory and its
-                applications to machine learning, high-dimensional statistics, deep learning and
-                computational
-                neuroscience.</p>
+            I have a particular interest in applications
+            to neuroscience problems.
+            </p>
             <p>Here is a list of links to my publications:</p>
             <ul>
-                <li>2 papers under review</li>
+                <li><b><a href="https://hal.science/hal-04151796" target="_blank" rel="noopener noreferrer">Implicit
+                            differentiation for hyperparameter tuning the
+                            weighted Graphical Lasso.</a></b><br>
+                    Can Pouliquen, Paulo Gonçalves, Mathurin Massias, Titouan Vayer<br>
+                    <i>GRETSI, 2023.</i>
+                </li>
+                <br>
+                <li><b><a href="https://hal.science/hal-04062317v2" target="_blank" rel="noopener noreferrer">Sparsity
+                            in neural networks can improve their
+                            privacy.</a></b><br>
+                    Antoine Gonon, Léon Zheng, Clément Lalanne, Quoc-Tung Le, Guillaume Lauga, Can Pouliquen<br>
+                    <i>GRETSI, 2023.</i>
+                </li>
             </ul>
         </div>
     </section>
     <section id="teaching">
         <div class="content">
             <h2>Teaching</h2>
-            <p>Hopefully soon :-)</p>
+            Soon :-)
         </div>
     </section>
+    <section id="talks">
+        <div class="content">
+            <h2>Talks</h2>
+            <ul>
+                <li>Neuroscience inspired machine learning. <i>OCKHAM seminar, June 2023.</i></li>
+                <br>
+                <li>Estimating dynamic functional connectivity graphs. <i>LIP PhD seminar, May 2023.</i></li>
+            </ul>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="content">
             <h2>Contact</h2>

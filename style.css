@@ -8,7 +8,7 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
 }
 
@@ -45,6 +45,10 @@ nav {
 nav h1 {
     font-size: 28px;
     font-weight: bold;
+}
+
+.content h2 {
+    color: #000283;
 }
 
 nav ul {
