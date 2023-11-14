@@ -25,6 +25,11 @@ header {
     align-items: center;
 }
 
+.my_pic img {
+    width: 50%;
+    height: auto;
+}
+
 .social-icons a {
     margin: 0 10px;
 }
