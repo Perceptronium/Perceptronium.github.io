@@ -14,7 +14,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #e2e2e2;
+    /* background-color: #9eecf1; */
+    background-color: #89a7a7;
     text-align: center;
     padding: 50px;
 }
@@ -161,7 +162,7 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #e2e2e2;
+    background-color: #89a7a7;
     text-align: center;
     padding: 20px;
 }
