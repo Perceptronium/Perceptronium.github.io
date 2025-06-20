@@ -1,0 +1,1 @@
+This is the source code to my public academic website: https://perceptronium.github.io/, cloned and adapted from Jon Barron's one at https://jonbarron.info/. Feel free to clone this code for your own personal use.
